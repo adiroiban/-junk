@@ -44,9 +44,12 @@ unbalanced_tree(
     )
 ).
 
+
+max(X, X, X).
 max(X, Y, Y) :-
     Y>X, !. 
 max(X, _, X). 
+
 
 height(nil, 0).
 height(t(_, L, R), H) :- 
